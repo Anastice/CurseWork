@@ -343,7 +343,7 @@ if( ! $_SESSION['username'] )
 					
 
 					<address>
-						<p>Daffodil International University<br><a href="tel:354543543">Ashulia</a> <br> <a href="mailto:info@bandname.com">playlist@gmail.com</a></p>
+						/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 					</address>
 
 					<form action="#" class="newsletter-form">

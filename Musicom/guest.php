@@ -10,7 +10,7 @@ if( ! $_SESSION['username'] )
 ?>
 
 <?php
-  $db=mysqli_connect("localhost","root","","playlist");
+  $db=mysqli_connect("localhost","root","root","playlist");
 $us = $_SESSION['username'];
  $sql2 = "SELECT * FROM shareinfo WHERE share_code = '$us' AND value = 1 ";
        

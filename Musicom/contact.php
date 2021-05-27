@@ -11,11 +11,6 @@
 		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<!-- Loading main css file -->
 		<link rel="stylesheet" href="style.css">
-		
-		<!--[if lt IE 9]>
-		<script src="js/ie-support/html5.js"></script>
-		<script src="js/ie-support/respond.js"></script>
-		<![endif]-->
 
 	</head>
 
@@ -63,12 +58,12 @@
 									<address>
 										<div class="row">
 											<div class="col-sm-6">
-												<strong>Company Name INC.</strong>
-												<span>40 Sibley St, Detroit</span>
+												<strong>Anastasiia Diadenko</strong>
+												<span>student of Black Sea National University</span>
 											</div>
 											<div class="col-sm-6">
-												<a href="mailto:office@companyname.com">office@companyname.com</a> <br>
-												<a href="tel:532930098891">(532) 930 098 891</a>
+												<a href="mailto:office@companyname.com">anastasiia.diadenko@gmail.com</a> <br>
+												<a href="tel:1212121212">(380) 930 098 279</a>
 											</div>
 										</div>
 									</address>

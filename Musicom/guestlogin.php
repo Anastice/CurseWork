@@ -5,7 +5,7 @@ if(  isset($_SESSION['username']) )
 	header("location:home.php");
 	die();
 }
-$db=mysqli_connect("localhost","root","","playlist");
+$db=mysqli_connect("localhost","root","root","playlist");
 	if(isset($_POST['login']))
 	{
 	    $code=mysqli_real_escape_string($db,$_POST['code']);

@@ -10,7 +10,7 @@ else
 {
 	$username = $_SESSION['username'];
 
-	$db=mysqli_connect("localhost","root","","playlist");
+	$db=mysqli_connect("localhost","root","root","playlist");
 
 	$sql = "SELECT * FROM user WHERE username = '$username' ";
 	$id = 'id';

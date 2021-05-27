@@ -12,7 +12,7 @@ if( ! $_SESSION['username'] )
 <?php
 
     $username = $_SESSION['username'];
-    $db=mysqli_connect("localhost","root","","playlist");
+    $db=mysqli_connect("localhost","root","root","playlist");
     $sql = "SELECT * FROM user WHERE username = '$username' ";
     $result = mysqli_query($db,$sql);
         while($row=mysqli_fetch_assoc($result))

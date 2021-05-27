@@ -21,13 +21,26 @@
 	</head>
 
 	<body class="header-collapse">
+     <style>
+    			.text-pink {
+            			      color: #f4baff;
+                              font-size: 48px;
+                              font-size: 3em;
+                              font-weight: 300;
+            			}
+            	.text-small {
+                              color: #e2c5e7;
+                              font-size: 30px;
+                              font-size: 1.875em;
+                              font-weight: 300;
+                              line-height: normal;
 
+     </style>
 		<div id="site-content">
 			<header class="site-header">
 				<div class="container">
 					<a href="index.php" id="branding">
 						<img src="dummy/mylogo.png" alt="Site Title">
-						<small class="site-description">You are what you listen to</small>
 					</a> <!-- #branding -->
 
 					<nav class="main-navigation">
@@ -66,8 +79,10 @@
 						<li class="lazy-bg" data-background="dummy/slide-1.jpg">
 							<div class="container">
 								<h2 class="slide-title">Musicom</h2>
-								<h3 class="slide-subtitle">You are what you listen to</h3>
-								<p class="slide-desc">Music for everyone.</p>
+
+								<h3 class="text-pink ">You are what you listen to</h3>
+
+								<p class="text-small">Music for everyone.</p>
 
 								<a href="register.php" class="button cut-corner">Register</a>
 							</div>
@@ -75,8 +90,8 @@
 						<li class="lazy-bg" data-background="dummy/slide-2.jpg">
 							<div class="container">
 									<h2 class="slide-title">Musicom</h2>
-									<h3 class="slide-subtitle">You are what you listen to</h3>
-									<p class="slide-desc">Song for Resting.</p>
+									<h3 class="text-pink">You are what you listen to</h3>
+									<p class="text-small">Song for Resting.</p>
 
 									<a href="register.php" class="button cut-corner">Register</a>
 							</div>
@@ -84,8 +99,8 @@
 						<li class="lazy-bg" data-background="dummy/slide-3.jpg">
 							<div class="container">
 									<h2 class="slide-title">Musicom</h2>
-									<h3 class="slide-subtitle">You are what you listen to</h3>
-									<p class="slide-desc">Exploring Language Through Song and Play.</p>
+									<h3 class="text-pink">You are what you listen to</h3>
+									<p class="text-small">Exploring Language Through Song and Play.</p>
 
 									<a href="register.php" class="button cut-corner">Register</a>
 							</div>
@@ -101,9 +116,7 @@
 							<ul class="slides">
 								<li>
 									<blockquote>
-										<p>"I prefer "Would you like to listen to some music?" Using "listen to" is more active. When people listen to music, they are concentrating on the music. When people hear music, they merely note that music is being played somewhere. They might not even like the music they hear.
-
-										Both sentences are understandable, though.
+										<p>"Music is your own experience, your thoughts, your wisdom. If you don’t live it, it won’t come out of your horn. – Charlie Parker. Music is still one of the most powerful connection between people. ALso music have control on our mood - so you can use it like tool for make your day nice !"
 										</p>
 										<cite>Anastasiia Diadenko</cite>
 										<span>Musicom</span>
@@ -111,9 +124,7 @@
 								</li>
 								<li>
 									<blockquote>
-										<p>"I prefer "Would you like to listen to some music?" Using "listen to" is more active. When people listen to music, they are concentrating on the music. When people hear music, they merely note that music is being played somewhere. They might not even like the music they hear.
-
-										Both sentences are understandable, though.
+										<p>"Music is your own experience, your thoughts, your wisdom. If you don’t live it, it won’t come out of your horn. – Charlie Parker. Music is still one of the most powerful connection between people. ALso music have control on our mood - so you can use it like tool for make your day nice !"
 										</p>
 										<cite>Anastasiia Diadenko</cite>
                                         <span>Musicom</span>

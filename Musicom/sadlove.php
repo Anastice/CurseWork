@@ -212,7 +212,7 @@ if( ! $_SESSION['username'] )
 
 						        $username = $_SESSION['username'];
 
-								$db=mysqli_connect("localhost","root","","playlist");
+								$db=mysqli_connect("localhost","root","root","playlist");
 
 								$sql = "SELECT * FROM user WHERE username = '$username' ";
 								$id = 'id';
@@ -343,7 +343,7 @@ if( ! $_SESSION['username'] )
 					
 
 					<address>
-						<p>Daffodil International University<br><a href="tel:354543543">Ashulia</a> <br> <a href="mailto:info@bandname.com">playlist@gmail.com</a></p>
+						/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 					</address>
 
 					<form action="#" class="newsletter-form">

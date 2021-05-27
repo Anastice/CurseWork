@@ -8,8 +8,6 @@ if( ! $_SESSION['username'] )
 }
 
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -44,7 +42,12 @@ if( ! $_SESSION['username'] )
 			body {
 			    font-family: "Lato", sans-serif;
 			}
-
+			.text-blue {
+        			      color: #e768ff;
+                          font-size: 48px;
+                          font-size: 3em;
+                          font-weight: 300;
+        			}
 			.sidenav {
 			    height: 100%;
 			    width: 0;
@@ -52,7 +55,7 @@ if( ! $_SESSION['username'] )
 			    z-index: 1;
 			    top: 0;
 			    left: 0;
-			    background-color: black;
+			    background-color: #280f4e;
 			    overflow-x: hidden;
 			    transition: 0.5s;
 			    padding-top: 120px;
@@ -63,13 +66,13 @@ if( ! $_SESSION['username'] )
 			    padding: 8px 8px 8px 32px;
 			    text-decoration: none;
 			    font-size: 15px;
-			    color: #818181;
+			    color: #280f4e;
 			    display: block;
 			    transition: 0.3s
 			}
 
 			.sidenav a:hover, .offcanvas a:focus{
-			    color: #fd5927;
+			    color: #280f4e;
 			}
 
 			.sidenav .closebtn {
@@ -102,7 +105,7 @@ if( ! $_SESSION['username'] )
 				<div class="container">
 					<a href="index.php" id="branding">
 						<img src="dummy/mylogo.png" alt="Site Title">
-						<small class="site-description">PlayList Media Player</small>
+						<small class="site-description">Media Player</small>
 					</a> <!-- #branding -->
 
 					<nav class="main-navigation">
@@ -140,7 +143,7 @@ if( ! $_SESSION['username'] )
 <main class="main-content">
                  <div class="fullwidth-block inner-content">
 					<div class="container">
-						<h2 class="page-title" style="text-align: center;">PlayList Media Player</h2>
+						<h2 class="page-title" style="text-align: center;">Media Player</h2>
 						<div class="row">
 						<div class="col-md-3">
 						 <h3>Select a List To show song list</h3>

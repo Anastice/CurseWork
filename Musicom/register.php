@@ -73,7 +73,7 @@ if(isset($_POST['submit']))
 				<div class="container">
 					<a href="index.php" id="branding">
 						<img src="dummy/mylogo.png" alt="Site Title">
-						<small class="site-description">All fovourate song in a place</small>
+						<small class="site-description">Your special collection</small>
 					</a> <!-- #branding -->
 					
 					<nav class="main-navigation">
@@ -130,7 +130,7 @@ if(isset($_POST['submit']))
 					
 					
 					<address>
-						<p>Daffodil International University<br><a href="tel:354543543">Ashulia</a> <br> <a href="mailto:info@bandname.com">playlist@gmail.com</a></p>
+						/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 					</address>
 					
 					<form action="#" class="newsletter-form">

@@ -343,7 +343,7 @@ if( ! $_SESSION['username'] )
 					<img src="dummy/logo-footer.png" alt="Site Name">
 
 					<address>
-						<p>Daffodil International University<br><a href="tel:354543543">Ashulia</a> <br> <a href="mailto:info@bandname.com">playlist@gmail.com</a></p>
+						<p>Black Sea National University<br><a href="tel:11111111">Ukraine</a></p>
 					</address>
 
 					<form action="#" class="newsletter-form">
@@ -376,7 +376,6 @@ if( ! $_SESSION['username'] )
 			}
         </script>
 
-		
 		<script src="js/plugins.js"></script>
 		<script src="js/app.js"></script>
 
