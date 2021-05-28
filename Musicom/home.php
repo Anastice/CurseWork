@@ -145,10 +145,13 @@ if( ! $_SESSION['username'] )
 					<div class="container">
 						<h2 class="page-title" style="text-align: center;">Media Player</h2>
 						<div class="row">
+
+						<!--BREAKPOINT-->
 						<div class="col-md-3">
 						 <h3>Select a List To show song list</h3>
 						</div>
 						<div class="col-md-6">
+
 						    <?php
 						        if(isset($_GET['showButton']))
 								{
@@ -160,15 +163,19 @@ if( ! $_SESSION['username'] )
 								}
 						    ?>
 						</div>
+
+						<!--BREAKPOINT-->
 						 <div class="col-md-3">
-						   <h2>You may like this songs</h2>
+						   <h2 style="color: white;">You may like this songs</h2>
 						</div>
 						</div>
 						</div>
 					</div>
 			</main>
 
-			<br><br>
+			<br>
+			    <iframe width="560" height="315" src="https://www.youtube.com/embed/1DXojsPU15U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<br>
 
 <footer class="site-footer">
 				<div class="container">

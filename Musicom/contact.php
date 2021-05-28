@@ -15,7 +15,7 @@
 	</head>
 
 	<body>
-		
+
 		<div id="site-content">
 			<header class="site-header">
 				<div class="container">
@@ -54,14 +54,18 @@
 							</div>
 							<div class="col-md-6">
 								<div class="map-wrapper">
+
 									<div class="map"></div>
+
 									<address>
 										<div class="row">
+
 											<div class="col-sm-6">
 												<strong>Anastasiia Diadenko</strong>
 												<span>student of Black Sea National University</span>
 											</div>
 											<div class="col-sm-6">
+
 												<a href="mailto:office@companyname.com">anastasiia.diadenko@gmail.com</a> <br>
 												<a href="tel:1212121212">(380) 930 098 279</a>
 											</div>
@@ -80,7 +84,7 @@
 				<div class="container">
 					
 					<address>
-						<p>Daffodil International University<br><a href="tel:354543543">Ashulia</a> <br> <a href="mailto:info@bandname.com">playlist@gmail.com</a></p>
+						<p>Black Sea National University<br><a href="tel:11111111">Ukraine</a></p>
 					</address>
 					
 					<form action="#" class="newsletter-form">
@@ -99,10 +103,12 @@
 				</div>
 			</footer> <!-- .site-footer -->
 
-		</div> <!-- #site-content -->
+		</div>
 
-		<script src="js/jquery-1.11.1.min.js"></script>	
-		<script src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>	
+		<script src="js/jquery-1.11.1.min.js"></script>
+
+		<script src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+
 		<script src="js/plugins.js"></script>
 		<script src="js/app.js"></script>
 		

@@ -258,6 +258,7 @@ body {
   overflow: hidden; }
 
 /* line 1, sass/libs/_component.scss */
+
 .button {
   display: inline-block;
   padding: 10px 30px;
@@ -1994,7 +1995,7 @@ body {
     text-decoration: none; }
 
 /* line 138, sass/layout/_content.scss */
-.map {
+.map {;
   height: 320px; }
 
 /* line 142, sass/layout/_content.scss */
@@ -2692,7 +2693,3 @@ body {
   -webkit-box-shadow: 4px 4px 14px #000;
   box-shadow: 4px 4px 14px #000;
 }
-
-
-
-/*# sourceMappingURL=style.css.map */

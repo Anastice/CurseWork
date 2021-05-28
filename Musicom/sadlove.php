@@ -131,7 +131,7 @@ if( ! $_SESSION['username'] )
 <div class="container">
 <div id="mySidenav" class="sidenav">
     <h4 style="color: white;">Your Play List Here</h4>
-	<a href="songaboutfamily.php">Songs about Family</a>
+	<a href="songstosinginthecar.php">Songs to Sing in the Car</a>
 	<a href="loverelationshipsong.php">Love / Relationship songs</a>
 	<a href="sadlove.php">Sad, lonely, or reflective songs</a>
 	<a href="tutorial.php">Tutorials</a>
@@ -259,7 +259,7 @@ if( ! $_SESSION['username'] )
 						    ?>
 						</div>
 						 <div class="col-md-3">
-						   <h2 style="color: blue; background: #E3310A;">You may like this songs</h2>
+						   <h2 style="color: white;">You may like this songs</h2>
 						   <?php
                                $sql13 ="SELECT * FROM filelist WHERE user_id = '$id' ORDER BY playcount DESC LIMIT 15";
                                	$title = 'title';
@@ -343,7 +343,7 @@ if( ! $_SESSION['username'] )
 					
 
 					<address>
-						/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+						<p>Black Sea National University<br><a href="tel:11111111">Ukraine</a></p>
 					</address>
 
 					<form action="#" class="newsletter-form">

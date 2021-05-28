@@ -259,7 +259,7 @@ if( ! $_SESSION['username'] )
 						    ?>
 						</div>
 						 <div class="col-md-3">
-						   <h2 style="color: blue; background: #E3310A;">You may like this songs</h2>
+						   <h2 style="color: white;">You may like this songs</h2>
 						   <?php
                                $sql13 ="SELECT * FROM filelist WHERE user_id = '$id' ORDER BY playcount DESC LIMIT 15";
                                	$title = 'title';
@@ -343,7 +343,7 @@ if( ! $_SESSION['username'] )
 					
 
 					<address>
-						<p>Daffodil International University<br><a href="tel:354543543">Ashulia</a> <br> <a href="mailto:info@bandname.com">playlist@gmail.com</a></p>
+						<p>Black Sea National University<br><a href="tel:11111111">Ukraine</a></p>
 					</address>
 
 					<form action="#" class="newsletter-form">

@@ -9,20 +9,7 @@ if( ! $_SESSION['username'] )
 
 ?>
 
-<?php
-  $db=mysqli_connect("localhost","root","root","playlist");
-$us = $_SESSION['username'];
- $sql2 = "SELECT * FROM shareinfo WHERE share_code = '$us' AND value = 1 ";
-       
-        $result3 = mysqli_query($db,$sql2);
-        while($row=mysqli_fetch_assoc($result3))
-        {
-            $user_id = $row['user_id'];
-            $id = $user_id;
-        }
 
-?>
-    
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -126,6 +113,8 @@ $us = $_SESSION['username'];
 						<ul class="menu">
 							<ul class="menu">
 							<li class="menu-item current-menu-item"><a href="index.php">Home</a></li>
+							<li class="menu-item"><a href="profile.php">Your Profile</a></li>
+							<li class="menu-item"><a href="addfile.php">Add File</a></li>
 							<!--<li class="menu-item"><a href="about.html" target="blank">About</a></li>-->
 							<!--<li class="menu-item"><a href="gallery.html" target="blank">LogIn</a></li>-->
 							<li class="menu-item"><a href="logout.php">Logout</a></li>
@@ -142,7 +131,7 @@ $us = $_SESSION['username'];
 <div class="container">
 <div id="mySidenav" class="sidenav">
     <h4 style="color: white;">Your Play List Here</h4>
-	<a href="songaboutfamily.php">Songs about Family</a>
+	<a href="songstosinginthecar.php">Songs about Family</a>
 	<a href="loverelationshipsong.php">Love / Relationship songs</a>
 	<a href="sadlove.php">Sad, lonely, or reflective songs</a>
 	<a href="tutorial.php">Tutorials</a>
@@ -157,11 +146,84 @@ $us = $_SESSION['username'];
 			<h2 class="page-title" style="text-align: center;">PlayList Media Player</h2>
 			<div class="row">
 			<div class="col-md-3">
+
+		
+
+		    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">Delete Song</button>
+		    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal1">Update Song</button>
+
+		  <!-- Modal -->
+		  <div class="modal fade" id="myModal" role="dialog">
+		    <div class="modal-dialog">
+		    
+		      <!-- Modal content-->
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		          <h4 class="modal-title">Delete Song</h4>
+		        </div>
+		        <div class="modal-body">
+		          	<form action="loverelationshipsong.php" method="post" class="contact-form">
+											
+						<input type="text" placeholder="Enter The Song Title" name="titlee">
+						<input type="submit" value="submit" name="submit2">
+					</form>
+		        </div>
+		        <div class="modal-footer">
+		          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        </div>
+		      </div>
+		      
+		    </div>
+		  </div>
+
+
+		    <div class="modal fade" id="myModal1" role="dialog">
+		    <div class="modal-dialog">
+		    
+		      <!-- Modal content-->
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		          <h4 class="modal-title">Update Song</h4>
+		        </div>
+		        <div class="modal-body">
+		          <form action="register.php" method="post" class="contact-form">
+											
+						<input type="text" placeholder="Enter The Song Title" name="con_pass">
+						<input type="submit" value="submit" name="submit3">
+
+					</form>
+		        </div>
+		        <div class="modal-footer">
+		          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        </div>
+		      </div>
+		      
+		    </div>
+		  </div>
+
+
+
+
+
 						<hr>
 						<?php
-						
-							    
-								$sql1 ="SELECT * FROM filelist WHERE user_id = '$id' AND catagory='Love / Relationship songs'";
+
+						        $username = $_SESSION['username'];
+
+								$db=mysqli_connect("localhost","root","","playlist");
+
+								$sql = "SELECT * FROM user WHERE username = '$username' ";
+								$id = 'id';
+								$result = mysqli_query($db,$sql);
+								while($row=mysqli_fetch_assoc($result))
+								{
+								    $id = $row['id'];
+							    }
+
+
+								$sql1 ="SELECT * FROM filelist WHERE user_id = '$id' AND catagory='Songs about Family'";
 								$title = 'catagory';
 								$link = 'file';
 								$result1 = mysqli_query($db,$sql1);
@@ -170,7 +232,7 @@ $us = $_SESSION['username'];
 									$sid = $row['id'];
 									$title = $row['title'];
 									$link = $row['file'];
-									$output = "<form method=\"get\" action=\"loverelationshipsong.php\">
+									$output = "<form method=\"get\" action=\"songstosinginthecar.php\">
 									<input type=\"hidden\" value=\"$link\" name=\"showfilelink\">
 									<input type=\"submit\" class=\"btn btn-link\" name=\"showButton\" value=\"$title\">
 									</form>
@@ -197,7 +259,7 @@ $us = $_SESSION['username'];
 						    ?>
 						</div>
 						 <div class="col-md-3">
-						   <h2 style="color: blue; background: #E3310A;">You may like this songs</h2>
+						   <h2 style="color: white;">You may like this songs</h2>
 						   <?php
                                $sql13 ="SELECT * FROM filelist WHERE user_id = '$id' ORDER BY playcount DESC LIMIT 15";
                                	$title = 'title';
@@ -208,7 +270,7 @@ $us = $_SESSION['username'];
 									$sid = $row['id'];
 									$title = $row['title'];
 									$link = $row['file'];
-									$output = "<form method=\"get\" action=\"loverelationshipsong.php\">
+									$output = "<form method=\"get\" action=\"songstosinginthecar.php\">
 									<input type=\"hidden\" value=\"$link\" name=\"showfilelink\">
 									<input type=\"submit\" class=\"btn btn-link\" name=\"showButton\" value=\"$title\">
 									</form>
@@ -250,7 +312,7 @@ $us = $_SESSION['username'];
 
                 $_SESSION['message']="Song Deleted"; 
 		        $_SESSION['username']=$username;
-		        header("location:loverelationshipsong.php");
+		        header("location:songstosinginthecar.php");
 
 			    } 
 
@@ -262,7 +324,7 @@ $us = $_SESSION['username'];
 
                 $_SESSION['message']="Song Deleted"; 
 		        $_SESSION['username']=$username;
-		        header("location:loverelationshipsong.php");
+		        header("location:songstosinginthecar.php");
 			}
 
 			    
@@ -278,6 +340,7 @@ $us = $_SESSION['username'];
 
 			<footer class="site-footer">
 				<div class="container">
+					
 
 					<address>
 						<p>Black Sea National University<br><a href="tel:11111111">Ukraine</a></p>

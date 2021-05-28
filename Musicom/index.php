@@ -7,12 +7,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 
 		<title>Musicom</title>
+
 		<!-- Loading third party fonts -->
 		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet" type="text/css">
 		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
 		<!-- Loading main css file -->
 		<link rel="stylesheet" href="style.css">
 
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesnt work if you view the page via file:'//' -->
 		<!--[if lt IE 9]>
 		<script src="js/ie-support/html5.js"></script>
 		<script src="js/ie-support/respond.js"></script>
@@ -41,7 +45,7 @@
 				<div class="container">
 					<a href="index.php" id="branding">
 						<img src="dummy/mylogo.png" alt="Site Title">
-					</a> <!-- #branding -->
+					</a>
 
 					<nav class="main-navigation">
 						<button type="button" class="toggle-menu"><i class="fa fa-bars"></i></button>
@@ -49,6 +53,7 @@
 							<li class="menu-item current-menu-item"><a href="index.php">Home</a></li>
 							<!--<li class="menu-item"><a href="about.html" target="blank">About</a></li>-->
 							<li class="menu-item">
+
 									<?php
 									   if ( isset($_SESSION['username']) )
 									   {
@@ -116,7 +121,10 @@
 							<ul class="slides">
 								<li>
 									<blockquote>
-										<p>"Music is your own experience, your thoughts, your wisdom. If you don’t live it, it won’t come out of your horn. – Charlie Parker. Music is still one of the most powerful connection between people. ALso music have control on our mood - so you can use it like tool for make your day nice !"
+										<p>"Music is your own experience, your thoughts, your wisdom.
+										If you don’t live it, it won’t come out of your horn. – Charlie Parker.
+										Music is still one of the most powerful connection between people. ALso music have control
+										on our mood - so you can use it like tool for make your day nice !"
 										</p>
 										<cite>Anastasiia Diadenko</cite>
 										<span>Musicom</span>
@@ -124,7 +132,7 @@
 								</li>
 								<li>
 									<blockquote>
-										<p>"Music is your own experience, your thoughts, your wisdom. If you don’t live it, it won’t come out of your horn. – Charlie Parker. Music is still one of the most powerful connection between people. ALso music have control on our mood - so you can use it like tool for make your day nice !"
+										<p>"When I hear music, I fear no danger. I am invulnerable. I see no foe. I am related to the earliest times, and to the latest. Henry David Thoreau. Music is still one of the most powerful connection between people. ALso music have control on our mood - so you can use it like tool for make your day nice !"
 										</p>
 										<cite>Anastasiia Diadenko</cite>
                                         <span>Musicom</span>
@@ -133,14 +141,12 @@
 							</ul>
 						</div>
 					</div>
-				</div> <!-- .testimonial-section -->
+				</div>
 
 
 
 			<footer class="site-footer">
 				<div class="container">
-					
-
 					<address>
 						<p>Black Sea National University<br><a href="tel:11111111">Ukraine</a></p>
 					</address>
@@ -161,7 +167,7 @@
 				</div>
 			</footer> <!-- .site-footer -->
 
-		</div> <!-- #site-content -->
+		</div> <!-- site-content -->
 
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script src="js/plugins.js"></script>

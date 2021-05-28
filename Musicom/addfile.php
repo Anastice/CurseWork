@@ -22,7 +22,7 @@ else
 
 }
 
-if( isset($_POST['add'])){
+if(isset($_POST['add'])){
 	$uid = $id;
 	$title = mysqli_real_escape_string($db,$_POST['title']);
 	$file = mysqli_real_escape_string($db,$_POST['url']);
@@ -41,7 +41,7 @@ if( isset($_POST['add'])){
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 		
-		<title>Add File On MyPlaylist</title>
+		<title>Add File On Your Collection</title>
 		<!-- Loading third party fonts -->
 		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet" type="text/css">
 		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -63,7 +63,7 @@ if( isset($_POST['add'])){
 					<a href="index.php" id="branding">
 						<img src="dummy/mylogo.png" alt="Site Title">
 						<small class="site-description">Add your favourate song here</small>
-					</a> <!-- #branding -->
+					</a>
 					
 					<nav class="main-navigation">
 						<button type="button" class="toggle-menu"><i class="fa fa-bars"></i></button>
@@ -90,24 +90,18 @@ if( isset($_POST['add'])){
 							         unset($_SESSION['message']);
 							    }
 							?>
-								<form action="addfile.php" method="post" class="contact-form">
+								    <form action="addfile.php" method="post" class="contact-form">
 									<input type="text" placeholder="File title" name="title">
 									<input type="text" placeholder="File link" name="url">
 
-									<h3>Select video catagory</h3>
-									<table>
-										<tr>
-										<td>
-								    <input type="radio" placeholder="File title" name="type" value="Songs about Family">Songs about Family
-									<input type="radio" placeholder="File title" name="type" value="Love / Relationship songs">Love / Relationship songs
-									<input type="radio" placeholder="File title" name="type" value="Sad, lonely, or reflective songs">Sad, lonely, or reflective songs
-									<input type="radio" placeholder="File title" name="type" value="Tutorials">Tutorials
-									<input type="radio" placeholder="File title" name="type" value="others">others
-										</td>
-											
-										</tr>
-									</table>
-									<br>
+									<h3>Select video category</h3>
+
+								    Songs to Sing in the Car <input type="radio"  name="type" value="Songs to Sing in the Car"><Br>
+									Rock Classics <input type="radio"  name="type" value="Rock Classics">	<Br>
+									Peaceful Piano  <input type="radio"  name="type" value="Peaceful Piano"><Br>
+									Happy Hits! <input type="radio"  name="type" value="Happy Hits!">Happy Hits! <Br>
+									Other  <input type="radio"  name="type" value="others"><Br>
+
 								  <input type="submit" value="Add File" name="add">
 								</form>
 							</div>
@@ -120,7 +114,7 @@ if( isset($_POST['add'])){
 				<div class="container">
 					
 					<address>
-						<p>Daffodil International University<br><a href="tel:354543543">Ashulia</a> <br> <a href="mailto:info@bandname.com">playlist@gmail.com</a></p>
+						<p>Black Sea National University<br><a href="tel:11111111">Ukraine</a></p>
 					</address>
 					
 					<form action="#" class="newsletter-form">

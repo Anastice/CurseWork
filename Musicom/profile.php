@@ -50,7 +50,7 @@ if( ! $_SESSION['username'] )
 <!DOCTYPE html>
 <html>
 <head>
-    <title>your profile</title>
+    <title>Your profile</title>
 
         <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -225,7 +225,7 @@ if( ! $_SESSION['username'] )
             <div class="listing-tab col-md-6 col-md-offset-3">
                   <!-- Nav tabs -->
                   <ul class="nav nav-tabs" id="myTabs" role="tablist">
-                 <h4>Your Information,s</h4>
+                 <h4>Your Information</h4>
                   </ul>
                 
                   <!-- Tab panes -->
