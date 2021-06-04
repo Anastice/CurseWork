@@ -1,2 +1,0 @@
-# sweater
-Spring Boot learning
