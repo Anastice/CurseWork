@@ -70,7 +70,6 @@
 
 							</li>
 							<li class="menu-item"><a href="register.php">Sign Up</a></li>
-							<li class="menu-item"><a href="guestlogin.php">Enter Share Code</a></li>
 							<!--<li class="menu-item"><a href="blog.html" target="blank">Blog</a></li>-->
 							<li class="menu-item"><a href="contact.php">Report Us</a></li>
 						</ul> <!-- .menu -->

@@ -11,7 +11,6 @@ section,
 summary {
   display: block; }
 
-/* line 61, sass/libs/_normalize.scss */
 audio,
 canvas,
 video {
@@ -30,7 +29,6 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
-/* line 109, sass/libs/_normalize.scss */
 html,
 button,
 input,
@@ -247,8 +245,8 @@ table {
 
 /* line 1, sass/libs/_global.scss */
 body {
-  background-color: #141524;
-  color: #af92b2;
+  background-color: #141414;
+  color: #848484;
   font-family: "Source Sans Pro", "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 24px; }
@@ -258,11 +256,10 @@ body {
   overflow: hidden; }
 
 /* line 1, sass/libs/_component.scss */
-
 .button {
   display: inline-block;
   padding: 10px 30px;
-  background-color: #6d27fd;
+  background-color: #fd5927;
   border: none;
   color: white;
   text-decoration: none;
@@ -271,27 +268,27 @@ body {
           transition: .3s ease; }
   /* line 11, sass/libs/_component.scss */
   .button:hover {
-    background-color: #5a93fd; }
+    background-color: #fd805a; }
   /* line 15, sass/libs/_component.scss */
   .button.primary {
-    background-color: #27b0fd; }
+    background-color: #fd5927; }
     /* line 17, sass/libs/_component.scss */
     .button.primary:hover {
-      background-color: #5ac5fd; }
+      background-color: #fd805a; }
   /* line 21, sass/libs/_component.scss */
   .button.secondary {
-    background-color: #6e5884;
+    background-color: #848484;
     color: white; }
     /* line 24, sass/libs/_component.scss */
     .button.secondary:hover {
-      background-color: #95879e; }
+      background-color: #9e9e9e; }
   /* line 29, sass/libs/_component.scss */
   .button.small {
     padding: 5px 10px; }
   /* line 33, sass/libs/_component.scss */
   .button.cut-corner {
-    background: -webkit-linear-gradient(90deg, #e768ff, #e768ff) top left, -webkit-linear-gradient(90deg, #e768ff, #e768ff) top right, -webkit-linear-gradient(135deg, transparent 10px, #e768ff 0) bottom right, -webkit-linear-gradient(90deg, #e768ff, #e768ff) bottom left;
-    background: linear-gradient(0deg, #e768ff, #e768ff) top left, linear-gradient(0deg, #e768ff, #e768ff) top right, linear-gradient(315deg, transparent 10px, #e768ff 0) bottom right, linear-gradient(0deg, #e768ff, #e768ff) bottom left;
+    background: -webkit-linear-gradient(90deg, #fd5927, #fd5927) top left, -webkit-linear-gradient(90deg, #fd5927, #fd5927) top right, -webkit-linear-gradient(135deg, transparent 10px, #fd5927 0) bottom right, -webkit-linear-gradient(90deg, #fd5927, #fd5927) bottom left;
+    background: linear-gradient(0deg, #fd5927, #fd5927) top left, linear-gradient(0deg, #fd5927, #fd5927) top right, linear-gradient(315deg, transparent 10px, #fd5927 0) bottom right, linear-gradient(0deg, #fd5927, #fd5927) bottom left;
     background-size: 55% 55%;
     background-repeat: no-repeat; }
     /* line 41, sass/libs/_component.scss */
@@ -302,8 +299,8 @@ body {
       background-repeat: no-repeat; }
     /* line 50, sass/libs/_component.scss */
     .button.cut-corner:active {
-      background: -webkit-linear-gradient(90deg, #e768ff, #e768ff top left, -webkit-linear-gradient(90deg, #e768ff, #e768ff) top right, -webkit-linear-gradient(135deg, transparent 10px, #e768ff 0) bottom right, -webkit-linear-gradient(90deg, #e768ff, #e768ff) bottom left;
-      background: linear-gradient(0deg, #e768ff, #e768ff) top left, linear-gradient(0deg, #e768ff, #e768ff) top right, linear-gradient(315deg, transparent 10px, #e768ff 0) bottom right, linear-gradient(0deg, #e768ff, #e768ff) bottom left;
+      background: -webkit-linear-gradient(90deg, #d63302, #d63302) top left, -webkit-linear-gradient(90deg, #d63302, #d63302) top right, -webkit-linear-gradient(135deg, transparent 10px, #d63302 0) bottom right, -webkit-linear-gradient(90deg, #d63302, #d63302) bottom left;
+      background: linear-gradient(0deg, #d63302, #d63302) top left, linear-gradient(0deg, #d63302, #d63302) top right, linear-gradient(315deg, transparent 10px, #d63302 0) bottom right, linear-gradient(0deg, #d63302, #d63302) bottom left;
       background-size: 55% 55%;
       background-repeat: no-repeat; }
 
@@ -1778,7 +1775,7 @@ body {
     display: none; }
     /* line 40, sass/layout/_header.scss */
     .main-navigation .toggle-menu:hover, .main-navigation .toggle-menu:active, .main-navigation .toggle-menu.active {
-      color: #e768ff; }
+      color: #fd5927; }
     @media screen and (max-width: 640px) {
       /* line 30, sass/layout/_header.scss */
       .main-navigation .toggle-menu {
@@ -1812,7 +1809,7 @@ body {
         opacity: 0;
         border-left: 4px solid transparent;
         border-right: 4px solid transparent;
-        border-bottom: 4px solid #e768ff;
+        border-bottom: 4px solid #fd5927;
         -webkit-transition: .3s ease;
                 transition: .3s ease; }
       /* line 75, sass/layout/_header.scss */
@@ -1823,7 +1820,7 @@ body {
         opacity: 1; }
       /* line 80, sass/layout/_header.scss */
       .main-navigation .menu .menu-item:hover a, .main-navigation .menu .menu-item.current-menu-item a {
-        color: #e768ff; }
+        color: #fd5927; }
     /* line 84, sass/layout/_header.scss */
     .main-navigation .menu a {
       display: block;
@@ -1859,21 +1856,26 @@ body {
     list-style: none;
     margin: 0;
     padding: 0; }
-
+    /* line 117, sass/layout/_header.scss */
     .mobile-menu .menu a {
       padding: 10px;
       color: #848484;
       text-decoration: none;
       display: block;
       background: #191919; }
-
+      /* line 124, sass/layout/_header.scss */
       .mobile-menu .menu a:hover {
-        color: #e768ff; }
-
+        color: #fd5927; }
+    /* line 126, sass/layout/_header.scss */
     .mobile-menu .menu .current-menu-item a {
-      color: #e768ff; }
+      color: #fd5927; }
 
-
+/*
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+/* clearfix */
+/* line 7, sass/layout/_content.scss */
 .owl-carousel .owl-wrapper:after {
   content: ".";
   display: block;
@@ -1882,33 +1884,41 @@ body {
   line-height: 0;
   height: 0; }
 
+/* display none until init */
+/* line 16, sass/layout/_content.scss */
 .owl-carousel {
   display: none;
   position: relative;
   width: 100%;
   -ms-touch-action: pan-y; }
 
+/* line 22, sass/layout/_content.scss */
 .owl-carousel .owl-wrapper {
   display: none;
   position: relative;
   -webkit-transform: translate3d(0px, 0px, 0px); }
 
+/* line 27, sass/layout/_content.scss */
 .owl-carousel .owl-wrapper-outer {
   overflow: hidden;
   position: relative;
   width: 100%; }
 
+/* line 32, sass/layout/_content.scss */
 .owl-carousel .owl-wrapper-outer.autoHeight {
   -webkit-transition: height 500ms ease-in-out;
   transition: height 500ms ease-in-out; }
 
+/* line 40, sass/layout/_content.scss */
 .owl-carousel .owl-item {
   float: left; }
 
+/* line 43, sass/layout/_content.scss */
 .owl-controls .owl-page,
 .owl-controls .owl-buttons div {
   cursor: pointer; }
 
+/* line 47, sass/layout/_content.scss */
 .owl-controls {
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -1917,10 +1927,13 @@ body {
   user-select: none;
   -webkit-tap-highlight-color: transparent; }
 
-
+/* mouse grab icon */
+/* line 57, sass/layout/_content.scss */
 .grabbing {
   cursor: url(grabbing.png) 8 8, move; }
 
+/* fix */
+/* line 62, sass/layout/_content.scss */
 .owl-carousel .owl-wrapper,
 .owl-carousel .owl-item {
   -webkit-backface-visibility: hidden;
@@ -1930,20 +1943,22 @@ body {
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0); }
 
+/* line 74, sass/layout/_content.scss */
 .content .post {
   position: relative;
   margin-bottom: 30px;
   padding-left: 100px;
   padding-bottom: 30px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+  /* line 80, sass/layout/_content.scss */
   .content .post .entry-date {
     position: absolute;
     left: 0;
     top: 0;
     width: 70px;
-    background: #e768ff;
-    background: -webkit-linear-gradient(90deg, #e768ff, #e768ff) top left, -webkit-linear-gradient(90deg, #e768ff, #e768ff) top right, -webkit-linear-gradient(135deg, transparent 10px, #e768ff 0) bottom right, -webkit-linear-gradient(90deg, #e768ff, #e768ff) bottom left;
-    background: linear-gradient(0deg, #e768ff, #e768ff) top left, linear-gradient(0deg, #e768ff, #e768ff) top right, linear-gradient(315deg, transparent 10px, #e768ff 0) bottom right, linear-gradient(0deg, #e768ff, #e768ff) bottom left;
+    background: #fd5927;
+    background: -webkit-linear-gradient(90deg, #fd5927, #fd5927) top left, -webkit-linear-gradient(90deg, #fd5927, #fd5927) top right, -webkit-linear-gradient(135deg, transparent 10px, #fd5927 0) bottom right, -webkit-linear-gradient(90deg, #fd5927, #fd5927) bottom left;
+    background: linear-gradient(0deg, #fd5927, #fd5927) top left, linear-gradient(0deg, #fd5927, #fd5927) top right, linear-gradient(315deg, transparent 10px, #fd5927 0) bottom right, linear-gradient(0deg, #fd5927, #fd5927) bottom left;
     background-size: 55% 55%;
     background-repeat: no-repeat;
     color: white;
@@ -1985,17 +2000,17 @@ body {
               transition: .3s ease; }
       /* line 127, sass/layout/_content.scss */
       .content .post .entry-title a:hover {
-        color: #e768ff; }
+        color: #fd5927; }
   /* line 130, sass/layout/_content.scss */
   .content .post p {
     margin-bottom: 10px; }
   /* line 131, sass/layout/_content.scss */
   .content .post a {
-    color: #e768ff;
+    color: #fd5927;
     text-decoration: none; }
 
 /* line 138, sass/layout/_content.scss */
-.map {;
+.map {
   height: 320px; }
 
 /* line 142, sass/layout/_content.scss */
@@ -2024,7 +2039,7 @@ body {
   .contact-form input[type="submit"] {
     float: right;
     width: auto;
-    background-color: #e768ff; }
+    background-color: #fd5927; }
   /* line 159, sass/layout/_content.scss */
   .contact-form textarea {
     min-height: 150px; }
@@ -2033,7 +2048,7 @@ body {
 .map-wrapper address {
   font-style: normal;
   background: #353535;
-  border-bottom: 3px solid #e768ff;
+  border-bottom: 3px solid #fd5927;
   padding: 10px;
   color: white; }
   /* line 171, sass/layout/_content.scss */
@@ -2044,7 +2059,7 @@ body {
     text-decoration: none; }
     /* line 176, sass/layout/_content.scss */
     .map-wrapper address a:hover {
-      color: #e768ff; }
+      color: #fd5927; }
 
 /* line 2, sass/layout/_sidebar.scss */
 .widget .widget-title {
@@ -2091,7 +2106,7 @@ body {
     font-weight: 400; }
     /* line 48, sass/layout/_sidebar.scss */
     .discography-list .detail h3 a {
-      color: #e768ff;
+      color: #fd5927;
       text-decoration: none; }
   /* line 53, sass/layout/_sidebar.scss */
   .discography-list .detail .year {
@@ -2226,9 +2241,8 @@ body {
       -webkit-transition-delay: .3s;
               transition-delay: .3s; }
     /* line 36, sass/pages/_homepage.scss */
-
     .slider .slides .slide-subtitle {
-      color: #e768ff;
+      color: #fd5927;
       font-size: 48px;
       font-size: 3em;
       font-weight: 300;
@@ -2242,7 +2256,6 @@ body {
               transition-delay: .6s; }
     /* line 46, sass/pages/_homepage.scss */
     .slider .slides .slide-desc {
-      color: #e768ff;
       font-size: 30px;
       font-size: 1.875em;
       font-weight: 300;
@@ -2317,7 +2330,7 @@ body {
     /* line 116, sass/pages/_homepage.scss */
     .quote-slider blockquote cite {
       display: block;
-      color: #e768ff;
+      color: #fd5927;
       font-size: 24px;
       font-size: 1.5em;
       font-weight: 100;
@@ -2351,7 +2364,7 @@ body {
               transition: .3s ease; }
       /* line 145, sass/pages/_homepage.scss */
       .quote-slider .flex-direction-nav a:hover {
-        background-color: #e768ff; }
+        background-color: #fd5927; }
 
 /* line 152, sass/pages/_homepage.scss */
 .section-title {
@@ -2403,7 +2416,7 @@ body {
             transition: .3s ease; }
     /* line 186, sass/pages/_homepage.scss */
     .event-nav a:hover {
-      background-color: #e768ff; }
+      background-color: #fd5927; }
 
 /* line 191, sass/pages/_homepage.scss */
 .event {
@@ -2415,9 +2428,9 @@ body {
     left: 0;
     top: 0;
     width: 70px;
-    background: #e768ff;
-    background: -webkit-linear-gradient(90deg, #e768ff, #e768ff top left, -webkit-linear-gradient(90deg, #e768ff, #e768ff) top right, -webkit-linear-gradient(135deg, transparent 10px, #e768ff 0) bottom right, -webkit-linear-gradient(90deg, #e768ff, #e768ff) bottom left;
-    background: linear-gradient(0deg, #e768ff #e768ff) top left, linear-gradient(0deg, #e768ff, #e768ff) top right, linear-gradient(315deg, transparent 10px, #e768ff 0) bottom right, linear-gradient(0deg, #e768ff, #e768ff) bottom left;
+    background: #fd5927;
+    background: -webkit-linear-gradient(90deg, #fd5927, #fd5927) top left, -webkit-linear-gradient(90deg, #fd5927, #fd5927) top right, -webkit-linear-gradient(135deg, transparent 10px, #fd5927 0) bottom right, -webkit-linear-gradient(90deg, #fd5927, #fd5927) bottom left;
+    background: linear-gradient(0deg, #fd5927, #fd5927) top left, linear-gradient(0deg, #fd5927, #fd5927) top right, linear-gradient(315deg, transparent 10px, #fd5927 0) bottom right, linear-gradient(0deg, #fd5927, #fd5927) bottom left;
     background-size: 55% 55%;
     background-repeat: no-repeat;
     color: white;
@@ -2515,11 +2528,11 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border: 1px solid #e768ff;
+  border: 1px solid #fd5927;
   padding: 10px 20px;
   border-radius: 0;
   background: none;
-  color: #e768ff;
+  color: #fd5927;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 12px;
@@ -2554,8 +2567,8 @@ body {
     margin-right: 10px; }
     /* line 42, sass/pages/_gallery.scss */
     .filter-links a.current, .filter-links a:hover {
-      border: 1px solid #e768ff;
-      color: #e768ff; }
+      border: 1px solid #fd5927;
+      color: #fd5927; }
     @media screen and (max-width: 480px) {
       /* line 27, sass/pages/_gallery.scss */
       .filter-links a {
@@ -2631,7 +2644,7 @@ body {
     height: 0; }
   /* line 15, sass/pages/_download.scss */
   .item .item-title {
-    color: #e768ff;
+    color: #fd5927;
     font-weight: 400;
     margin: 0; }
   /* line 20, sass/pages/_download.scss */
@@ -2662,12 +2675,12 @@ body {
               transition: .3s ease; }
       /* line 43, sass/pages/_download.scss */
       .item .social-share a:hover {
-        color: #e768ff; }
+        color: #fd5927; }
 
 
         .ltn{
               margin-top: 45px;
-              margin-left: 10px; 
+              margin-left: 10px;
               background: blue;
                      }
       .menu{
